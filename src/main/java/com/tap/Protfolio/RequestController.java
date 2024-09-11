@@ -1,5 +1,6 @@
 package com.tap.Protfolio;
 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -8,26 +9,26 @@ public class RequestController {
 
     @RequestMapping("/")
     public String homePage() {
-        return "redirect:/home.html";
+        return "home";  // This will map to /static/home.html
     }
 
     @RequestMapping("/education")
     public String educationPage() {
-        return "redirect:/education.html";
+        return "education";  // This will map to /static/education.html
     }
 
     @RequestMapping("/skills")
     public String skillPage() {
-        return "redirect:/skills.html";
+        return "skills";  // This will map to /static/skills.html
     }
 
     @RequestMapping("/projects")
     public String projectPage() {
-        return "redirect:/projects.html";
+        return "projects";  // This will map to /static/projects.html
     }
 
     @RequestMapping("/contact")
     public String contactPage() {
-        return "redirect:/contact.html";
+        return "contact";  // This will map to /static/contact.html
     }
 }
