@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+    * {
+      text-decoration: none;
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa; /* Light grey background */
+    }
+
+    .navbar {
+      background-color: #d4edda; /* Light green background */
+    }
+
+    .navbar-brand {
+      text-shadow: 1px 1px 1px purple, 2px 2px 1px red;
+    }
+
+    .nav-link {
+      text-shadow: 1px 1px 1px red, 2px 2px 1px palevioletred;
+    }
+
+    .nav-link:hover {
+      color: blue;
+    }
+
+    .footer {
+      background-color: #d4edda; /* Light green background */
+      padding: 20px 0;
+    }
+
+    #footer .bIcon {
+      color: #000000; /* Ensure icons are visible on light background */
+      font-size: 40px;
+      transition: color 0.3s;
+    }
+
+    #footer .bIcon:hover {
+      color: #007bff;
+    }
+
+
+    .container {
+      max-width: 1200px;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .project-card {
+      background-color: #ffffff;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      height: 250px; /* Fixed height */
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .project-card a {
+      color: #007bff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!--navbar start-->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand animate__animated animate__bounce animate__infinite" href="#">PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/education">EDUCATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/skills">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--navbar end-->
+
+  <!--projects start-->
+  <section id="portfolio" class="py-5">
+    <div class="container">
+      <h1 class="section-title animate__animated animate__lightSpeedInLeft animate__slow animate__repeat-3">Projects</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="project-card">
+            <h3>Project Title 1</h3>
+            <p>Description of the project goes here. Provide a brief summary of what the project is about.</p>
+            <a href="#" target="_blank" rel="noopener">GitHub Link</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <h3>Project Title 2</h3>
+            <p>Description of the project goes here. Provide a brief summary of what the project is about.</p>
+            <a href="#" target="_blank" rel="noopener">GitHub Link</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <h3>Project Title 3</h3>
+            <p>Description of the project goes here. Provide a brief summary of what the project is about.</p>
+            <a href="#" target="_blank" rel="noopener">GitHub Link</a>
+          </div>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+  <!--projects end-->
+
+  <!--footer start-->
+  <footer id="footer" class="footer">
+    <div class="container-fluid text-center">
+      <div class="mt-4">
+        <a href="http://fb.com" target="_blank" rel="noopener"><i class="bi bi-facebook footer bIcon"></i></a>
+        <a href="https://in.linkedin.com/" target="_blank" rel="noopener"><i class="bi bi-linkedin footer bIcon"></i></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="bi bi-twitter footer bIcon"></i></a>
+      </div>
+      <div class="text-light mt-2">
+        <p>&copy; 2024 M Venkatachalapathi. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!--footer end-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

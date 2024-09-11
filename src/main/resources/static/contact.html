@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <!--navbar start-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light-green fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand animate__animated animate__bounce animate__infinite" href="#">PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/education">EDUCATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/skills">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--navbar end -->
+
+  <!--contact start-->
+  <section id="contact" class="py-5 mt-5">
+    <div class="container">
+      <h1 class="text-center animate__animated animate__lightSpeedInLeft animate__slow animate__repeat-3">Contact Us</h1>
+      <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15568.3516842496!2d78.34463588350022!3d12.7076842890919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3badb73f9ef44631%3A0x172c09ce6abf7ae!2sMulakalapalle%2C%20Andhra%20Pradesh%20517425!5e0!3m2!1sen!2sin!4v1688060488252!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-6 mb-4">
+          <form>
+            <div class="mb-3">
+              <label for="FullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="FullName" placeholder="Enter your full name">
+            </div>
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">Email</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="Enter your email address">
+            </div>
+            <div class="mb-3">
+              <label for="teleInput" class="form-label">Contact Number</label>
+              <input type="text" class="form-control" id="teleInput" placeholder="Enter your contact number">
+            </div>
+            <div class="mb-3">
+              <label for="textArea" class="form-label">Enter Your Query Here</label>
+              <textarea class="form-control" id="textArea" rows="3"></textarea>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--contact end-->
+
+  <!--footer start-->
+  <footer id="footer" class="bg-light-green text-dark py-4">
+    <div class="container text-center">
+      <div class="mb-4">
+        <a href="http://fb.com" target="_blank" rel="noopener"><i class="bi bi-facebook bIcon"></i></a>
+        <a href="https://in.linkedin.com/" target="_blank" rel="noopener"><i class="bi bi-linkedin bIcon"></i></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="bi bi-twitter bIcon"></i></a>
+      </div>
+      <div>
+        <p>&copy; 2024 M Venkatachalapathi. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!--footer end-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+    * {
+      text-decoration: none;
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar-light {
+      background-color: #d4edda; /* Light green color for navbar */
+    }
+
+    .bg-light-green {
+      background-color: #d4edda; /* Light green color */
+    }
+
+    .navbar-brand {
+      text-shadow: 1px 1px 1px purple, 2px 2px 1px red;
+    }
+
+    .nav-link {
+      text-shadow: 1px 1px 1px red, 2px 2px 1px palevioletred;
+    }
+
+    .nav-link:hover {
+      color: blue;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    #footer .bIcon {
+      color: #000000; /* Ensure icons are visible on light background */
+      font-size: 40px;
+      transition: color 0.3s;
+    }
+
+    #footer .bIcon:hover {
+      color: #007bff;
+    }
+
+    .footer-custom {
+      background-color: #d4edda; /* Light green color for footer */
+    }
+
+    .contact iframe {
+      border-radius: 0.5rem;
+    }
+
+    .container {
+      margin-top: 80px; /* Adjust to ensure content doesn't overlap with fixed navbar */
+    }
+
+    .form-label {
+      font-weight: bold;
+    }
+
+    .form-control {
+      border-radius: 0.375rem;
+    }
+
+    .text-center h1 {
+      margin-bottom: 1.5rem;
+      font-size: 2.5rem;
+    }
+
+    .mb-4 {
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</body>
+
+</html>

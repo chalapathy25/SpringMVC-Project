@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+    * {
+      text-decoration: none;
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: #d4edda; /* Light green background for navbar */
+    }
+
+    .navbar-brand {
+      text-shadow: 1px 1px 1px purple, 2px 2px 1px red;
+    }
+
+    .nav-link {
+      text-shadow: 1px 1px 1px red, 2px 2px 1px palevioletred;
+    }
+
+    .nav-link:hover {
+      color: blue;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    #footer {
+      background-color: #d4edda; /* Light green background for footer */
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    #footer .bIcon {
+      color: #000000; /* Ensure icons are visible on light background */
+      font-size: 40px;
+      transition: color 0.3s;
+    }
+
+    #footer .bIcon:hover {
+      color: #007bff;
+    }
+
+    .education-card {
+      border-radius: 0.375rem;
+      margin-bottom: 1rem;
+      padding: 1.5rem;
+      background-color: #6c757d; /* Updated background color */
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .education-card h5 {
+      margin-bottom: 0.5rem;
+    }
+
+    .education-card p {
+      margin-bottom: 0.25rem;
+    }
+
+    .education-card .card-body {
+      flex: 1;
+    }
+
+    .navbar-nav .nav-item {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .bannerBgImage {
+      height: 100vh;
+      background-image: url("./images/banner.jpg");
+      background-size: cover;
+      background-position: top center;
+      position: relative;
+    }
+
+    .bannerText {
+      text-align: left;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+
+    .bannerTitle {
+      font-size: 4rem;
+      text-shadow: 1px 1px 1px red, 2px 2px 1px red;
+    }
+
+    .bannerDesc {
+      font-size: 2rem;
+      text-shadow: 1px 1px 1px purple, 2px 2px 1px blue;
+    }
+
+    .home-img {
+      width: 390px;
+      height: 390px;
+      text-align: right;
+      position: absolute;
+      top: 20%;
+      left: 70%;
+    }
+
+    .glowing-circle {
+      width: 100%;
+      height: 100%;
+      background: yellowgreen;
+      border-radius: 38%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .glowing-circle::after {
+      content: '';
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      background: whitesmoke;
+      border-radius: 39%;
+    }
+
+    .glowing-circle .image {
+      position: relative;
+      width: 340px;
+      height: 340px;
+      background: red;
+      border-radius: 39%;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .image img {
+      position: absolute;
+      top: -15%;
+      left: 60%;
+      transform: translate(-60%);
+      max-width: 350px;
+      object-fit: cover;
+    }
+
+    .glowing-circle span {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#f06, #3cf);
+      border-radius: 39%;
+    }
+
+    .img-fluid:hover {
+      border: 2px solid red;
+    }
+
+    .card-img-top {
+      height: 50vh;
+    }
+
+    .container {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!--navbar start-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand animate__animated animate__bounce animate__infinite" href="#">PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/education">EDUCATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/skills">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--navbar end -->
+
+  <!--education start-->
+  <section id="education" class="py-5">
+    <div class="container">
+      <h1 class="text-center animate__animated animate__lightSpeedInLeft animate__slow animate__repeat-3">Education</h1>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="education-card">
+            <h5>B.Tech (CSE)</h5>
+            <div class="card-body">
+              <p><strong>Institution:</strong> Kuppam Engineering College</p>
+              <p><strong>Year of Passing:</strong> 2024</p>
+              <p><strong>Percentage:</strong> 80%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="education-card">
+            <h5>MPC</h5>
+            <div class="card-body">
+              <p><strong>Institution:</strong> Vikas Junior College</p>
+              <p><strong>Year of Passing:</strong> 2020</p>
+              <p><strong>Percentage:</strong> 98%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="education-card">
+            <h5>10th Class</h5>
+            <div class="card-body">
+              <p><strong>Institution:</strong> Z.P.H.S Vasanadu</p>
+              <p><strong>Year of Passing:</strong> 2018</p>
+              <p><strong>Percentage:</strong> 100%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--education end-->
+
+  <!--footer start-->
+  <footer id="footer">
+    <div class="container-fluid py-4">
+      <div class="text-center mb-3">
+        <a href="http://fb.com" target="_blank" rel="noopener"><i class="bi bi-facebook bIcon"></i></a>
+        <a href="https://in.linkedin.com/" target="_blank" rel="noopener"><i class="bi bi-linkedin bIcon"></i></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="bi bi-twitter bIcon"></i></a>
+      </div>
+      <div class="text-center">
+        <p>&copy; 2024 M Venkatachalapathi. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!--footer end-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9Y6klr55FhQuH4AdUrZ2jX7zFj6zA3oAaMD5tszZ1jok/t3v+M3D" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-1zLQTsa6lkj9YQ7vbiZtHlv4oF6U5vRpO3Z9Pjt6trC+W+8Kc8i8tGGT4Vbd4uZ" crossorigin="anonymous"></script>
+</body>
+
+</html>
